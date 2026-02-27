@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>神秘回响维基百科</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 主题样式 (可选择 vue、buble、dark 等) -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- 自定义样式（可选） -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+  <div id="app">加载中...</div>
+  <script>
+    window.$docsify = {
+      // 基础配置
+      name: 'wiki.EchoOfMysteria',
+      repo: 'Mid-time/wiki.EchoOfMysteria',
+      basePath: '/',
+      loadSidebar: true,
+      loadNavbar: true,
+      coverpage: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      formatUpdated: '{YYYY}/{MM}/{DD} HH:mm',
+
+      // 搜索配置
+      search: {
+        placeholder: '搜索文档...',
+        noData: '没有找到结果',
+        depth: 3,
+        hideOtherSidebarContent: false
+      },
+
+      // 分页配置
+      pagination: {
+        previousText: '上一篇',
+        nextText: '下一篇',
+        crossChapter: true,
+        crossChapterText: true
+      },
+
+      // 复制代码按钮配置
+      copyCode: {
+        buttonText: '复制代码',
+        errorText: '复制失败',
+        successText: '复制成功'
+      },
+
+      // 图片缩放配置
+      zoomImages: {
+        selector: 'img',                     // 所有图片都可缩放
+        options: {
+          background: 'rgba(0,0,0,0.8)'
+        }
+      },
+    }
+  </script>
+
+  <!-- 核心库 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- 插件：搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 插件：复制代码 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 插件：图片缩放 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 插件：分页 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/pagination.min.js"></script>
+  <!-- 插件：表情 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <!-- 代码高亮：根据需要引入语言，例如 Python -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <!-- 如果需要夜间模式，引入插件 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode/dist/index.min.js"></script> -->
+</body>
+</html>
